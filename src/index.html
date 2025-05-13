@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+    
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-purple-800 text-white py-6 shadow-md">
+      <h1 class="text-center text-3xl font-bold">📚 Buscador de Libros</h1>
+    </header>
+  
+    <main class="max-w-5xl mx-auto px-4 py-8">
+      <section class="bg-white p-6 rounded-2xl shadow-lg mb-8">
+        <h2 class="text-xl font-semibold mb-4">Filtra tu búsqueda</h2>
+        <form id="formulario" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <select id="genero" class="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <option value="">Género</option>
+            <option value="Ficción">Ficción</option>
+            <option value="No Ficción">No Ficción</option>
+            <option value="Ciencia Ficción">Ciencia Ficción</option>
+            <option value="Romance">Romance</option>
+            <option value="Fantasía">Fantasía</option>
+          </select>
+          
+          <input type="text" id="titulo" placeholder="Título" class="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-500" />
+  
+          <input type="text" id="autor" placeholder="Autor" class="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-500" />
+  
+  
+          <select id="precio-min" class="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <option value="">Precio Mínimo</option>
+            <option value="10000">$10.000</option>
+            <option value="12000">$12.000</option>
+            <option value="15000">$15.000</option>
+            <option value="20000">$20.000</option>
+          </select>
+  
+          <select id="precio-max" class="border rounded-lg p-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <option value="">Precio Máximo</option>
+            <option value="10000">$10.000</option>
+            <option value="12000">$12.000</option>
+            <option value="15000">$15.000</option>
+            <option value="20000">$20.000</option>
+          </select>
+        </form>
+      </section>
+  
+      <section id="resultado" class="p-6 rounded-xl max-w-4xl mx-auto mt-10 text-center">
+        <h2 class="text-center text-3xl font-bold"">Resultado</h2>
+        <!-- Aquí se insertarán los resultados -->
+      </section>
+    </main>
+  
+  </body>
+
+  <script src="js/bd.js"></script>
+  <script src="js/app.js"></script>
+  
+</html>
